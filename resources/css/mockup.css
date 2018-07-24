@@ -1,0 +1,15 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.content-box {
+  background-color: white;
+  border: 1px solid #D7DCE6;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.blue-top {
+  border-top: 2px solid #00A6E6 !important;
+}
+/*# sourceMappingURL=mockup.css.map */

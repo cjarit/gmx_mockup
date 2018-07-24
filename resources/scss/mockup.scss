@@ -1,0 +1,16 @@
+@import 'color';
+
+body {
+  background-color: $bg-grey;
+}
+
+.content-box {
+  background-color: white;
+  border: 1px solid $border-grey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.blue-top {
+  border-top: 2px solid $ktb-blue!important;
+}

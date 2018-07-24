@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/datatable_gmx.scss",
+        "../scss/_color.scss"
+    ],
+    "names": [],
+    "file": "datatable_gmx.css"
+}

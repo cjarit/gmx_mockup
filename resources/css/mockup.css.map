@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,gBAAgB,ECHR,OAAO;CDIhB;;AAED,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,GAAG,CAAC,KAAK,CCPL,OAAO;EDQnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,GAAG,CAAC,KAAK,CCXZ,OAAO,CDWe,UAAU;CAC1C",
+    "sources": [
+        "../scss/mockup.scss",
+        "../scss/_color.scss"
+    ],
+    "names": [],
+    "file": "mockup.css"
+}
