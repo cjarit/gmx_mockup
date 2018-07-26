@@ -1,1 +1,311 @@
 @import 'color';
+
+@mixin clearfix() {
+  clear: both;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.clear-fix {
+  @include clearfix();
+}
+
+.gmx-data-table {
+  td,th {
+    font-size: 13px;
+  }
+  thead {
+    th {
+      white-space: nowrap;
+      font-family: 'KrungthaiExBold';
+      background-color: $bg-grey;
+      color: $darkest-grey;
+      padding-right: 28px!important;
+      position: relative;
+      background-image: none !important;
+      &.command {
+        min-width: 60px;
+        padding-right: 8px!important;
+      }
+    }
+  }
+  tbody {
+    td {
+      font-family: 'Krungthai';
+      color: $precious-blue-darkest;
+      &.command {
+        min-width: 60px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+  .table {
+    //width: auto;
+    //max-width: auto;
+    margin-bottom: 0px;
+    tbody {
+      tr {
+        background-color: white;
+        &.even {
+          background-color: $bg-grey-fade;
+        }
+      }
+    }
+  }
+  .dataTables_scrollHeadInner {
+    thead {
+      border-top: 1px solid $border-grey;
+      th {
+        border-bottom: 2px solid $border-grey;
+        &.sorting,
+        &.sorting_asc,
+        &.sorting_desc{
+          cursor: pointer;
+          transition: 0.2s;
+          &:hover {
+            background-color: $bg-grey-hover;
+          }
+          &:active {
+            box-shadow: none;
+            outline: none;
+          }
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+        &.sorting:after, 
+        &.sorting_asc:after,
+        &.sorting_desc:after{
+          position: absolute;
+          top: 8px;
+          right: 14px;
+          display: block;
+          font-family: 'FontAwesome';
+        }
+        &.sorting:after{
+          content: "\f0dc";
+          color: $grey;
+          font-size: 12px;
+          //padding-top: 0.12em;
+        }
+        &.sorting_asc:after {
+          content: "\f0de";
+          color: $ktb-blue-darker;
+        }
+        &.sorting_desc:after {
+          content: "\f0dd";
+          color: $ktb-blue-darker;
+        }
+      }
+    }
+  }
+  .dataTables_scrollBody {
+    border-bottom: 1px solid $border-grey;
+    background-color: $border-grey;
+    thead {
+      th {
+        &.sorting:after {
+          display: none;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            border-top: 1px solid $border-grey;
+          }
+        }
+      }
+    }
+  }
+
+  .DTFC_LeftWrapper {
+    .DTFC_LeftHeadWrapper {
+      thead {
+        border-top: 1px solid $border-grey;
+        th {
+          border-bottom: 2px solid $border-grey;
+          box-shadow: inset -2px 0 0px 0px $border-grey;
+        }
+      }
+    }
+    .DTFC_LeftBodyWrapper {
+      .DTFC_LeftBodyLiner {
+        border-bottom: 1px solid $border-grey;
+        tbody {
+          tr {
+            td {
+              box-shadow: inset -2px 0 0px 0px $border-grey;
+            }
+            &:first-child {
+              td {
+                border-top: 1px solid $border-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-header,
+  .table-footer {
+    padding: 12px 15px;
+    float: left;
+    width: 100%;
+    @include clearfix();
+  }
+  .dataTables_length {
+    label {
+      margin-bottom: 0;
+      font-family: 'Krungthai';
+    }
+    width: 50%;
+    float: left;
+    select {
+      border-radius: 2px;
+      border-color: $border-grey;
+      margin: 0px 4px;
+      //background: none;
+      //box-shadow: none;
+    }
+  }
+  .dataTables_paginate {
+    float: left;
+    width: 70%;
+    .pagination {
+      margin: 0px;
+    }
+  }
+  .dataTables_info {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding: 8px 0px;
+    color: $darkest-grey;
+  }
+  .dataTables_scroll {
+    @include clearfix();
+  }
+  .long-data {
+    min-width: 200px;
+  }
+  .btn-table {
+    border-radius: 100px;
+    border: 1px solid $border-grey;
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+    color: $darkest-grey;
+    transition: 0.2s;
+    .fas {
+      font-size: 13px;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      &.fa-edit {
+        left: 7px;
+      }
+    }
+    &:hover {
+      color: $precious-blue-darkest;
+      background-color: $bg-grey;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.12);
+    }
+  }
+  .pagination {
+    .paginate_button {
+      a {
+        border-color: $border-grey;
+        color: $darkest-grey;
+        &:hover {
+          box-shadow: none;
+          outline: 0;
+        }
+        &:active {
+          box-shadow: none;
+          outline: 0;
+        }
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+      &.active {
+        a {
+          background-color: $border-grey;
+        }
+      }
+      &.disabled {
+        a {
+          opacity: 0.4;
+        }
+      }
+    }
+    &>li.next>a{
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    &>li.previous>a {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &>li.first>a {
+      border-radius: 2px;
+      margin-right: 12px;
+    }
+    &>li.last>a {
+      border-radius: 2px;
+      margin-left: 12px;
+    }
+  }
+  .have-status {
+    font-family: 'KrungthaiBold';
+  }
+  .status-new {
+    color: $ktb-blue-darker;
+    &::before {
+      background-color: $ktb-blue-darker
+    }
+  }
+  .status-caution {
+    color: $golden-yellow-darker;
+    &::before {
+      background-color: $golden-yellow-darker;
+    }
+  }
+  .status-fail {
+    color: $red;
+    &::before {
+      background-color: $red;
+    }
+  }
+  .status-success {
+    color: $green-darker;
+    &::before {
+      background-color: $green-darker;
+    }
+  }
+  .status-with-dot {
+    position: relative;
+    padding-left: 22px;
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 8px;
+      top: 10px;
+      //background-color: $bg-grey-hover;
+      border-radius: 100px;
+    }
+  }
+}
