@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Enable Table with option
   $('.gmx-data-table .data-table').DataTable({
     "paging": true,
     "scrollY": true,
@@ -23,6 +24,7 @@ $(document).ready(function () {
     },
     "pagingType": "full_numbers"
   });
+  //Refresh table again after loading to fix column width bugs
   setTimeout(
     function () {
       $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();

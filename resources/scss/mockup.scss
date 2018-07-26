@@ -1,6 +1,8 @@
 @import 'color';
 @import 'font';
 
+/* For Mockup only*/
+
 body {
   background-color: $bg-grey;
 }
@@ -26,7 +28,6 @@ body {
   font-size: 14px;
   color: $ktb-blue-darkest;
 }
-
 .right-option {
   text-align: right;
 }

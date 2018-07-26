@@ -8,11 +8,11 @@
     clear: both;
   }
 }
-
+/* Clear fix class*/
 .clear-fix {
   @include clearfix();
 }
-
+/*Create DIV outside table with this class*/
 .gmx-data-table {
   td,th {
     font-size: 13px;
