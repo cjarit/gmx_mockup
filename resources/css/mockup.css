@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Krungthai";
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Regular.eot");
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/krungthai/KrungthaiFastWeb-Regular.woff") format("woff"), url("../fonts/krungthai/KrungthaiFastWeb-Regular.ttf") format("truetype"), url("../fonts/krungthai/KrungthaiFastWeb-Regular.svg#Krungthai") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KrungthaiBold";
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Bold.eot");
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/krungthai/KrungthaiFastWeb-Bold.woff") format("woff"), url("../fonts/krungthai/KrungthaiFastWeb-Bold.ttf") format("truetype"), url("../fonts/krungthai/KrungthaiFastWeb-Bold.svg#KrungthaiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KrungthaiExBold";
+  src: url("../fonts/krungthai/KrungthaiFastWeb-ExtraBold.eot");
+  src: url("../fonts/krungthai/KrungthaiFastWeb-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/krungthai/KrungthaiFastWeb-ExtraBold.woff") format("woff"), url("../fonts/krungthai/KrungthaiFastWeb-ExtraBold.ttf") format("truetype"), url("../fonts/krungthai/KrungthaiFastWeb-ExtraBold.svg#KrungthaiExBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KrungthaiItalic";
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Italic.eot");
+  src: url("../fonts/krungthai/KrungthaiFastWeb-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/krungthai/KrungthaiFastWeb-Italic.woff") format("woff"), url("../fonts/krungthai/KrungthaiFastWeb-Italic.ttf") format("truetype"), url("../fonts/krungthai/KrungthaiFastWeb-Italic.svg#KrungthaiItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #F5F5F5;
 }
@@ -11,5 +43,32 @@ body {
 
 .blue-top {
   border-top: 2px solid #00A6E6 !important;
+}
+
+.content-box-head {
+  padding: 6px 15px;
+  border-bottom: 1px solid #D7DCE6;
+}
+
+.box-title {
+  font-family: 'KrungthaiBold';
+  font-size: 14px;
+  color: #00446B;
+}
+
+.right-option {
+  text-align: right;
+}
+
+.btn-close {
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: 'KrungthaiBold';
+  font-size: 13px;
+  color: #868686;
+}
+
+.btn-close:hover {
+  color: #4A4A49;
 }
 /*# sourceMappingURL=mockup.css.map */
