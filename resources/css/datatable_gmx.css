@@ -170,19 +170,36 @@
 
 .gmx-data-table .dataTables_paginate {
   float: left;
-  width: 70%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .gmx-data-table .dataTables_paginate .pagination {
   margin: 0px;
 }
 
+@media (min-width: 992px) {
+  .gmx-data-table .dataTables_paginate {
+    width: 70%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .gmx-data-table .dataTables_info {
   float: left;
-  width: 30%;
-  text-align: right;
+  width: 100%;
+  text-align: center;
   padding: 8px 0px;
   color: #4A4A49;
+}
+
+@media (min-width: 992px) {
+  .gmx-data-table .dataTables_info {
+    width: 30%;
+    text-align: right;
+  }
 }
 
 .gmx-data-table .dataTables_scroll {

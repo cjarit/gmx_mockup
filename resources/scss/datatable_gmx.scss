@@ -177,17 +177,28 @@
   }
   .dataTables_paginate {
     float: left;
-    width: 70%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
     .pagination {
       margin: 0px;
+    }
+    @media (min-width: 992px) {
+      width: 70%;
+      text-align: left;
+      margin-bottom: 0;
     }
   }
   .dataTables_info {
     float: left;
-    width: 30%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     padding: 8px 0px;
     color: $darkest-grey;
+    @media (min-width: 992px) {
+      width: 30%;
+      text-align: right;
+    }
   }
   .dataTables_scroll {
     @include clearfix();
